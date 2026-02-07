@@ -464,7 +464,7 @@ function rurality(ruralPct) {
 // ==========================================
 // LOAD DATA
 // ==========================================
-d3.csv('https://drive.google.com/file/d/1jkFvFycObMGNjII8A0ndSeKImTUMGVVK/view?usp=sharing').then(raw => {
+d3.csv('analytic_data2025_v3.csv').then(raw => {
   // Skip row index 1 (variable codes row) and national aggregate
   // D3 csv already uses row 0 as headers, so raw[0] is the variable-codes row
   const counties = raw.slice(1).filter(d => {
