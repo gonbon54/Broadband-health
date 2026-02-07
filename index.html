@@ -301,19 +301,19 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
   <div class="findings-grid">
     <div class="finding-card">
       <div class="number">11.1 pp</div>
-      <p>Rural counties with less than 70% broadband access report 26.8% poor or fair health, compared to 15.7% in rural counties above 90%—an 11.1 percentage-point gap.</p>
+      <p>Rural counties with less than 70% broadband access report 26.8% poor or fair health, compared to 15.7% in rural counties above 90% a 11.1 percentage-point gap.</p>
     </div>
     <div class="finding-card">
       <div class="number">72%</div>
-      <p>Among the 250 counties with the worst health outcomes, 72% also fall in the bottom quartile for broadband access, revealing geographic clustering of disadvantage.</p>
+      <p>Among the 250 counties with the worst health outcomes, 72% of them also fall in the bottom quartile for broadband access, revealing geographic discrepancies.</p>
     </div>
     <div class="finding-card">
       <div class="number">6.7M</div>
-      <p>Roughly 6.7 million Americans live in rural counties that lack both adequate broadband (&lt;80%) and primary care physicians (ratio &gt; 2,000:1)—a critical telehealth gap.</p>
+      <p>Roughly 6.7 million Americans live in rural counties that lack both adequate broadband (less than 80%) and primary care physicians (ratio less than 2000 to 1), exposing a critical telehealth gap.</p>
     </div>
     <div class="finding-card">
       <div class="number">5.1 yrs</div>
-      <p>Life expectancy averages 77.7 years in the highest-broadband quartile of counties versus 72.6 years in the lowest—a gap of more than five years.</p>
+      <p>Life expectancy averages 77.7 years in the highest quartile of broadband access, versus 72.6 years in the lowest quartile, a gap of more than 5 years.</p>
     </div>
   </div>
 </div>
@@ -323,7 +323,7 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
 <section class="viz-section" id="scatter-section">
 <div class="container">
   <h2>Broadband Access and Self-Reported Health</h2>
-  <p class="section-subtitle">Each circle represents a U.S. county; color indicates rurality classification</p>
+  <p class="section-subtitle">Each circle represents a U.S. county; color indicates community type classification</p>
   <div class="chart-wrapper">
     <div class="chart-controls">
       <label>Filter by rurality:</label>
@@ -344,8 +344,8 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
     <div class="brush-hint">Hover over any dot for details. Use the filter buttons or state dropdown to explore subsets.</div>
   </div>
   <div class="interpretation">
-    <p><strong>The relationship between broadband access and self-reported health is strikingly consistent across all three rurality categories.</strong> In rural counties with less than 70% broadband penetration, an average of 26.8% of adults report poor or fair health—nearly double the 15.7% seen in rural counties where broadband exceeds 90%. The same pattern holds in suburban and urban settings, though rural counties cluster disproportionately at the lower end of both broadband access and health status.</p>
-    <p>The correlation between broadband and poor health is strong across all groups: r&nbsp;=&nbsp;−0.71 for urban, −0.64 for suburban, and −0.56 for rural counties. That the association is somewhat weaker in rural areas may reflect the influence of additional barriers—geographic isolation, hospital closures, and workforce shortages—that broadband alone cannot resolve. For policymakers, the data suggests that <strong>expanding broadband is necessary but not sufficient</strong>: connectivity must be paired with healthcare capacity to close the rural health gap.</p>
+    <p><strong>The relationship between broadband access and self-reported health is strikingly consistent across all three rurality categories.</strong> rural counties with less than 70% broadband penetration, an average of 26.8% of adults report poor or fair health—nearly double the 15.7% in rural counties with broadband penetration exceeding 90%. The same pattern holds in suburban and urban settings, though rural counties cluster disproportionately at the lower end of both broadband access and health status.</p>
+    <p>The correlation between broadband and poor reported health is strong and negative across all groups, indicating that broadband access is a factor in health. However, the correlation becomes weaker in rural areas, suggesting that variables unique to different communities also contribute to health outcomes. The trends indicate that <strong>broadband access is a factor in health outcomes</strong> and that healthcare availability must be conjoined with connectivity.</p>
   </div>
 </div>
 </section>
@@ -366,8 +366,8 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
     <div id="map-legend-container"></div>
   </div>
   <div class="interpretation">
-    <p><strong>Geographic analysis reveals a concentrated "digital health divide" stretching across the rural South, Appalachia, and parts of the Great Plains and Southwest.</strong> These regions show the darkest shading on both the broadband and health maps—counties where fewer than 80% of households have broadband access and more than 22% of adults report poor or fair health. Toggle between the two variables above to see how closely the patterns overlap.</p>
-    <p>The Mississippi Delta, eastern Kentucky, and the Texas–Mexico border region stand out as areas of compounding disadvantage. In contrast, metropolitan corridors along the coasts and in the upper Midwest consistently show both high connectivity and better health outcomes. Among the 250 counties with the worst health outcomes nationwide, 181 (72%) also rank in the bottom quartile for broadband. This clustering underscores the case for <strong>place-based infrastructure investment</strong> that targets regions facing simultaneous deficits in digital and healthcare access, rather than treating broadband and health as separate policy domains.</p>
+    <p><strong>On the map, you can see a clear "digital health divide" across the rural South, parts of the Great Plains, and the Southwest.</strong> are the areas that show the darkest on the broadband and health maps. Try switching between the two maps using the filters above the map to see just how closely the patterns line up with eachother.</p>
+    <p>Three areas that stand out are the southern Mississippi River, eastern Kentucky, and the southern border of Texas. All three of these areas exhibit low broadband access and adverse health outcomes. On the contrary, metropolitan areas in the northeast and parts of the upper Midwest show high activity and good health outcomes. This connection underscores the need to invest in county-level broadband infrastructure, focusing on areas with underdeveloped broadband and poor health outcomes.</p>
   </div>
 </div>
 </section>
@@ -376,7 +376,7 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
 <section class="viz-section" id="bar-section">
 <div class="container">
   <h2>Health Outcomes Across Broadband Quartiles</h2>
-  <p class="section-subtitle">Average health indicators grouped by broadband access level and rurality</p>
+  <p class="section-subtitle">Average health indicators grouped by broadband access level and community types</p>
   <div class="chart-wrapper">
     <div class="chart-controls">
       <label>Metric:</label>
@@ -393,8 +393,8 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
     <div id="bar-chart"></div>
   </div>
   <div class="interpretation">
-    <p><strong>Across every health metric examined, counties in the lowest broadband quartile fare significantly worse than those in the highest quartile—and the gradient is steeper in rural areas.</strong> For example, poor or fair health rates average 23.7% in the bottom broadband quartile versus 16.2% in the top quartile, a 7.5 percentage-point difference. The diabetes gap is similarly striking: 13.0% prevalence in the lowest-connectivity quartile versus 9.8% in the highest, a pattern consistent with research linking internet access to health information, telemedicine uptake, and chronic disease management.</p>
-    <p>Use the metric toggle to compare patterns for mental distress, diabetes, and life expectancy. The consistency of the broadband–health gradient across multiple outcomes strengthens the case that digital connectivity functions as a <strong>social determinant of health</strong>—one that intersects with poverty, education, and geography to shape community wellbeing. These findings suggest that federal broadband initiatives such as the Broadband Equity, Access, and Deployment (BEAD) program may yield measurable public health returns, particularly in persistently underserved rural communities.</p>
+    <p><strong>Across all health metrics examined, counties in the lowest broadband quartile (bottam 25%) are worse than those in the highest quartile (top 25%).</strong> example, here are some of the numbers: poor or fair health rates average 23.7% in the bottom broadband quartile versus 16.2% in the top quartile, a 7.5 percentage-point difference. The average rate of poor or fair health in the bottom quarter of broadband connectivity is 23.7% versus 16.2% in the top quarter, a 7.5 percentage-point difference. These findings are consistent with academic research linking broadband access to health information and to telemedicine.</p>
+    <p>Use the metric toggle to compare patterns for mental distress, diabetes, and life expectancy. The consistency of the broadband–health gradient across multiple outcomes strengthens the case that digital connectivity functions as a <strong>social determinant of health</strong> alongside other determinants such as poverty, education, and genetics. These findings suggest that federal broadband initiatives such as the Broadband Equity, Access, and Deployment program (a 2021 federal broadband infrastructure program) may yield measurable public health returns.</p>
   </div>
 </div>
 </section>
@@ -403,7 +403,7 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
 <section class="text-section">
 <div class="container">
   <h2>Methodology</h2>
-  <p>This analysis draws on the <strong>County Health Rankings &amp; Roadmaps 2025</strong> dataset, compiled by the University of Wisconsin Population Health Institute. The dataset covers 3,143 counties and county-equivalents across all 50 states and the District of Columbia. Broadband access is measured as the percentage of households with a broadband internet subscription (American Community Survey, 2019–2023). Self-reported health, mental distress, and diabetes prevalence derive from the CDC's Behavioral Risk Factor Surveillance System. Rurality categories were constructed from the census-based "% Rural" variable: Urban (&lt;20% rural population), Suburban (20–50%), and Rural (&gt;50%). Counties missing broadband or health data were excluded, yielding 3,119 counties in the primary analysis.</p>
+  <p>This analysis was based on data from the <strong>Health Rankings &amp; Roadmaps 2025</strong> dataset, created by the University of Wisconsin Population Health Institute. The data is extensive, covering 3,143 counties across all 50 states and D.C. The primary variable in this study, broadband access, is measured as the percent of households with a broadband internet subscription. The University of Wisconsin derives Self-reported health, mental distress, and diabetes prevalence from the CDC's Behavioral Risk Factor Surveillance System. The counties were categorized as urban, suburban, or rural by using the Census's categorization. Lastly, counties missing any of the aforementioned variables were excluded from the analysis, leaving 3,119 counties.</p>
 </div>
 </section>
 
@@ -411,9 +411,8 @@ svg text { font-family: 'Source Sans 3', sans-serif; }
 <section class="text-section">
 <div class="container">
   <h2>Limitations</h2>
-  <p><strong>Correlation, not causation.</strong> The patterns shown here cannot establish that broadband access directly improves health. Counties with low broadband tend to be poorer, more remote, and older—factors that independently drive worse health outcomes. Broadband may be partly a marker for broader economic development rather than a cause of better health.</p>
-  <p><strong>Measurement constraints.</strong> Broadband access reflects subscription rates, not actual usage quality. A household may technically have broadband but lack adequate speed for telehealth video visits. Self-reported health is subjective and may reflect cultural differences in how people describe their wellbeing. County-level aggregation also masks variation within counties—a rural county may contain a well-connected town center alongside unserved hinterlands.</p>
-  <p><strong>Missing data.</strong> Eight counties lacked broadband or rurality data and were excluded. Some newer measures, such as feelings of loneliness, have roughly 23% missingness and were not used as primary indicators. The analysis is cross-sectional and cannot capture trends over time.</p>
+  <p><strong>Correlation, not causation.</strong> The patterns shown in this analysis do not indicate that broadband access is the sole contributor to health outcomes. Counties with limited access to broadband internet tend to be less affluent, more remote, and older; each of these factors could affect health outcomes. It is possible that broadband may be a marker of broader economic outcomes rather than a direct cause of better health.</p>
+  <p><strong>Measurement constraints.</strong> As mentioned in the Methodology section, Broadband access reflects subscription rates; it is not a measure of internet quality. So a household may technically have broadband internet, but may lack the speed and quality for telehealth video visits. Lastly, Self-reported health is a survey question and is highly subjective. This may reflect personal discrepancies in how people describe their well-being.</p>
 </div>
 </section>
 
@@ -465,7 +464,7 @@ function rurality(ruralPct) {
 // ==========================================
 // LOAD DATA
 // ==========================================
-d3.csv('analytic_data2025_v3.csv').then(raw => {
+d3.csv('https://drive.google.com/file/d/1jkFvFycObMGNjII8A0ndSeKImTUMGVVK/view?usp=sharing').then(raw => {
   // Skip row index 1 (variable codes row) and national aggregate
   // D3 csv already uses row 0 as headers, so raw[0] is the variable-codes row
   const counties = raw.slice(1).filter(d => {
@@ -535,7 +534,7 @@ function buildScatter(data) {
   // Axes
   g.append('g').attr('class','axis').attr('transform',`translate(0,${height})`)
     .call(d3.axisBottom(x).ticks(8).tickFormat(d => (d*100)+'%'));
-  g.append('g').attr('class','axis').call(d3.axisLeft(y).ticks(6).tickFormat(d => (d*100)+'%'));
+  g.append('g').attr('class','axis').call(d3.axisLeft(y).ticks(6).tickFormat(d => (d*100).toFixed(0)+'%'));
 
   // Axis labels
   g.append('text').attr('class','axis-label').attr('text-anchor','middle')
