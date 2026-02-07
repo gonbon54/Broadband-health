@@ -525,7 +525,10 @@ function buildScatter(data) {
   // Axes
   g.append('g').attr('class','axis').attr('transform',`translate(0,${height})`)
     .call(d3.axisBottom(x).ticks(8).tickFormat(d => (d*100)+'%'));
-  g.append('g').attr('class','axis').call(d3.axisLeft(y).ticks(6).tickFormat(d => Math.round(d*100)+'%'));
+  g.append('g').attr('class','axis').call(d3.axisLeft(y).ticks(6).tickFormat(d => {
+    const rounded = Math.round(d * 100);
+    return rounded + '%';
+  }));
 
   // Axis labels
   g.append('text').attr('class','axis-label').attr('text-anchor','middle')
